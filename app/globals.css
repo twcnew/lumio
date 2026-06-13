@@ -1,0 +1,65 @@
+@import "tailwindcss";
+@import "../styles/lumio.css";
+
+:root {
+  /* design tokens — measured on the reference design */
+  --ink: #0e0a07;
+  --paper: #fefefe;
+  --steel: #18498b; /* deep button blue */
+  --royal: #2352de; /* accent blue */
+  --sky: #3372d9;
+  --violet: #8669b9;
+  --hairline: rgba(14, 10, 7, 0.07);
+  --hairline-2: rgba(14, 10, 7, 0.05);
+  --muted: rgba(14, 10, 7, 0.45);
+  --muted-2: rgba(14, 10, 7, 0.55);
+  --muted-3: rgba(14, 10, 7, 0.35);
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-instrument-serif), ui-serif, serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-paper: var(--paper);
+  --color-royal: var(--royal);
+  --color-steel: var(--steel);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  border: 0;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
