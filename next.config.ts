@@ -14,6 +14,9 @@ const nextConfig: NextConfig = {
   output: "export",
   basePath: isPages ? `/${repo}` : undefined,
   assetPrefix: isPages ? `/${repo}/` : undefined,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isPages ? `/${repo}` : "",
+  },
   trailingSlash: true,
   images: { unoptimized: true },
   devIndicators: false,

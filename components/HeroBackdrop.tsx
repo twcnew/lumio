@@ -2,8 +2,9 @@
 
 import { useEffect, useRef } from "react";
 
-const HERO_VIDEO_WEBM = "/screen1-glass.webm";
-const HERO_VIDEO_MP4 = "/screen1-glass.mp4";
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const HERO_VIDEO_WEBM = `${BASE}/screen1-glass.webm`;
+const HERO_VIDEO_MP4 = `${BASE}/screen1-glass.mp4`;
 
 /**
  * Hero backdrop — ribbed-glass loop with tint / vignette overlays in LumioHome.
