@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local video experiments (not used in production)
+/public/lumen-*.webm
+/public/gg-sky-bg-remix.mp4

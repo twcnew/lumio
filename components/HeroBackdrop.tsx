@@ -2,11 +2,12 @@
 
 import { useEffect, useRef } from "react";
 
-const HERO_VIDEO_SRC = "/screen1-glass.mp4";
+const HERO_VIDEO_WEBM = "/screen1-glass.webm";
+const HERO_VIDEO_MP4 = "/screen1-glass.mp4";
 
 /**
- * Hero backdrop — ribbed-glass loop (1920×1080 · 30fps · 15s) with tint /
- * vignette overlays applied in LumioHome (stage__tint, stage__vignette).
+ * Hero backdrop — ribbed-glass loop with tint / vignette overlays in LumioHome.
+ * WebM (VP9) first for Chrome/Firefox; MP4 (H.264) fallback for Safari.
  */
 export function HeroBackdrop() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -36,7 +37,8 @@ export function HeroBackdrop() {
         playsInline
         preload="auto"
       >
-        <source src={HERO_VIDEO_SRC} type="video/mp4" />
+        <source src={HERO_VIDEO_WEBM} type="video/webm" />
+        <source src={HERO_VIDEO_MP4} type="video/mp4" />
       </video>
     </div>
   );
