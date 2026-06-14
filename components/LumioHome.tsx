@@ -13,9 +13,9 @@ import { HowSection } from "./sections/HowSection";
 import { HubSection } from "./sections/HubSection";
 
 const SUB_LINES = [
-  "On construit des process AI-native adaptés à votre marché.",
-  "Positionnement, ciblage, outbound et démos : tout est pensé",
-  "pour transformer un produit complexe en pipeline qualifié.",
+  "Connect Stripe, QuickBooks, and your bank in 2 minutes.",
+  "Lumio's AI watches your numbers 24/7 and tells you exactly",
+  "what's happening before it becomes a problem",
 ];
 
 export function LumioHome() {
@@ -40,16 +40,16 @@ export function LumioHome() {
           <div className="hero__pill" data-pill>
             <BeamFrame />
             <span className="chip">NEW</span>
-            <span className="label">GTM AI-native · Pour produits complexes</span>
+            <span className="label">Runway forecast</span>
           </div>
           <SplitText
             as="h1"
             className="hero__title"
             step={11}
             segments={[
-              { text: "Vendez Votre Produit Complexe." },
-              { text: "Avec un GTM ", className: "row2", breakBefore: true },
-              { text: "Sur Mesure.", className: "row2 accent" },
+              { text: "Know Exactly Where Your" },
+              { text: "Money Goes. ", className: "row2", breakBefore: true },
+              { text: "Before It's Gone.", className: "row2 accent" },
             ]}
           />
           <p className="hero__sub" data-sub>
@@ -62,12 +62,12 @@ export function LumioHome() {
           <div className="hero__ctas" data-ctas>
             <button className="btn btn-solid">
               <BeamFrame />
-              Construire mon GTM
+              Connect your Accounts
               <DoubleArrows />
             </button>
             <button className="btn btn-ghost">
               <BeamFrame />
-              Voir la méthode
+              See a Demo
             </button>
           </div>
         </section>
