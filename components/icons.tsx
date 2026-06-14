@@ -13,7 +13,7 @@ export function Brand({ className }: { className?: string }) {
   return (
     <>
       <LumioMark className={className} />
-      <span className="wordmark">Lumio</span>
+      <span className="wordmark">AI Native GTM</span>
     </>
   );
 }

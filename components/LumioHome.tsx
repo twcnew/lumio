@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { useExperience } from "@/lib/useExperience";
 import { BeamFrame } from "./BeamFrame";
 import { BrowserMock } from "./BrowserMock";
-import { Drawer, PromoBar, TopNav } from "./Chrome";
+import { Drawer, TopNav } from "./Chrome";
 import { HeroBackdrop } from "./HeroBackdrop";
 import { SplitText } from "./SplitText";
 import { Brand, DoubleArrows } from "./icons";
@@ -24,7 +24,6 @@ export function LumioHome() {
 
   return (
     <div ref={rootRef}>
-      <PromoBar />
       <TopNav />
       <Drawer />
 

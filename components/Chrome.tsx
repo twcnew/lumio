@@ -3,20 +3,6 @@ import { Brand } from "./icons";
 
 const NAV_LINKS = ["About", "Product", "Integrations", "Pricing", "Blog"];
 
-export function PromoBar() {
-  return (
-    <div className="promo-bar" role="region" aria-label="Build offer">
-      <div className="promo-bar__copy">
-        <strong>Want a landing page like this?</strong>
-        <span>Let's build yours.</span>
-      </div>
-      <a className="promo-bar__btn" href="#" rel="noopener">
-        Book a build
-      </a>
-    </div>
-  );
-}
-
 export function TopNav() {
   return (
     <nav className="topnav is-glass" data-nav>

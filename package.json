@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "NEXT_PRIVATE_DISABLE_DEV_OVERLAY_UX=1 next dev -p 3001",
     "build": "next build",
     "build:pages": "GH_PAGES=true next build",
     "start": "next start",
